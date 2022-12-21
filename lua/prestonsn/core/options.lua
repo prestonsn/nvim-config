@@ -6,6 +6,7 @@ opt.number = true
 
 -- tabs & indentation
 opt.tabstop = 4
+opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
@@ -16,9 +17,11 @@ opt.wrap = false
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
+opt.hlsearch = false
+opt.incsearch = true
 
--- cursor line
--- opt.cursorline = true
+-- indent
+opt.smartindent = true
 
 -- appearance
 opt.termguicolors = true
@@ -34,3 +37,13 @@ opt.splitbelow = true
 
 -- considers asd-asd as one word, etc.
 opt.iskeyword:append("-")
+
+-- undo and swapfiles
+opt.swapfile = false
+opt.backup = false
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undofile = true
+
+-- ruler
+-- opt.colorcolumn = "80"
+
