@@ -20,4 +20,17 @@
 
 -- setup must be called before loading
 -- vim.cmd("colorscheme kanagawa")
-vim.cmd("colorscheme tokyonight-night")
+vim.cmd("colorscheme gruvbox-material")
+vim.cmd([[
+try
+  set termguicolors
+  let g:gruvbox_material_background="hard"
+  let g:gruvbox_material_foreground="material"
+  let g:gruvbox_material_cursor="purple"
+  let g:gruvbox_material_transparent_background=2
+  colorscheme gruvbox-material
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default
+  set background=dark
+endtry
+]])

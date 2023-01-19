@@ -45,7 +45,7 @@ return require('packer').startup(function(use)
     use({"nvim-telescope/telescope.nvim", branch = "0.1.x"})
 
     use("windwp/nvim-autopairs")
-    use("windwp/nvim-ts-autotag")
+    -- use("windwp/nvim-ts-autotag")
 
     use("mbbill/undotree")
     use("tpope/vim-fugitive")
@@ -79,6 +79,7 @@ return require('packer').startup(function(use)
             require'alpha'.setup(require'alpha.themes.startify'.config)
         end
     }
+    use("sainnhe/gruvbox-material")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
